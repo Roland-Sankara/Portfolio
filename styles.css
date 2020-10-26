@@ -62,11 +62,12 @@ nav > ul {
 }
 header {
 	/* border-bottom: .5px solid rgb(152, 204, 75); */
-	border-bottom: 1px dashed rgb(183, 199, 189);
+	border-bottom: .5px solid rgb(183, 199, 189);
 	padding: 40px 45px;
 	position: sticky;
 	top: 0px;
 	z-index: 3;
+	overflow: hidden;
 }
 /* End of Header Section */
 #icons,
@@ -108,6 +109,7 @@ section {
 	padding: 30px;
 	padding-top: 90px;
 	margin: auto;
+	overflow: hidden;
 }
 
 #Intro > p:nth-of-type(2) {
@@ -429,8 +431,8 @@ h1 {
 @media only screen and (min-width: 961px) {
 	/* The Header Section */
 	header {
-		/* border-bottom: none; */
-		border-bottom: 1px dashed rgb(183, 199, 189);
+		border-bottom: none;
+		/* border-bottom: 0px solid rgb(183, 199, 189); */
 	}
 	#nav {
 		justify-content: space-between;
