@@ -1,14 +1,41 @@
 const experiences = [
 	{
-		CodeImpact : [
-			'Learning Instructor',
-			'@ CodeImpact',
-			'July 2020 - Present',
-			[
-				'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, AWS, React, WordPress, and Netlify.',
-				'Teaching teenagers the fundamentals of Programming and front-end development.'
+		'Kanzu-Code' : [
+			'Learning & Development Lead',
+			'@ Kanzu-Code',
+			'October 2022 - Present',
+			[ 
+				"...." 
 			],
-			'https://www.facebook.com/codeimpactug/'
+			'https://outbox.co.ug/'
+		]
+	},
+	{
+		'Outbox' : [
+			'Software Developer & Technical Mentor',
+			'@ Outbox',
+			'October 2020 - December 2021',
+			[ 
+				"Worked with product managers and business analysts to redefine the UI of the GetIn Web App, a community referral system to support outreach to pregnant girls in rural communities in Uganda, based on feedback from stakeholders",
+				"Documented the codebase of the GetIn App to effectively train the new and existing team members. https://github.com/UNFPAInnovation/GetIN-Web-2.0#readme",
+				"Developed the GetIn Web dashboard frontend, leveraging reusable components, unit, and integration tests to ensure a reliable, functional, readable, and maintainable codebase.",
+				"Developed an efficient USSD web server callback to handle requests leveraging the NITA(U) Mobile Service Delivery API a solution that was considered by the Project Manager in the final project implementation.",
+				"Facilitated learning at the Outbox-Edu Fullstack Software Engineering Bootcamp along with other learning facilitators.",
+				"Supported program implementation and assessed students' progress against curriculum learning objectives."
+			],
+			'https://outbox.co.ug/'
+		]
+	},
+	{
+		'CodeImpact' : [
+			'Lead Learning Facilitator',
+			'@ CodeImpact',
+			'July 2020 - September 2022',
+			[
+				"Facilitated learning in internal and external coding programs and boot camps.", 
+				"Managed and oversaw learning program implementation and assessed students' progress against curriculum learning objectives."
+			],
+			'http://codeimpact.co/'
 		]
 	},
 	{

@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+:root{
+	--orange-color: #DEAD0C;
+	--pale-green: rgb(110, 224, 154);
+	--bright-green: rgb(137, 224, 5);
+	--background: #0a192f;
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #0a192f;
+	background-color: var(--background);
 	color: white;
+	scroll-behavior: smooth;
+	scroll-padding-top: 10rem;
 }
+
 body {
 	overflow-x: hidden;
 }
@@ -24,7 +35,7 @@ a {
 }
 nav > ul {
 	list-style: none;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Chivo Mono', monospace;
 	font-size: 16px;
 }
 .top-margin {
@@ -41,7 +52,7 @@ nav > ul {
 	mix-blend-mode: normal;
 }
 #nav > li:last-of-type {
-	border: 2px solid rgb(137, 224, 5);
+	border: 2px solid var(--orange-color);
 	border-radius: 4px;
 	padding: 10px;
 }
@@ -50,12 +61,13 @@ nav > ul {
 }
 #nav > li {
 	display: none;
+	transition: .2s;
 }
 #nav > li:hover{
 	transform: translate(0px, 5px);
 }
 #nav > li::first-letter{
-	color:rgb(110, 224, 154);
+	color:var(--pale-green);
 }
 #nav > li:nth-of-type(5) {
 	display: block;
@@ -86,18 +98,17 @@ p {
 }
 
 #Intro > p:first-of-type {
-	color: rgb(137, 224, 5);
+	color: var(--orange-color);
 	font-weight: bold;
 	font-size: 20px;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Chivo Mono', monospace;
 	margin-bottom: 20px;
 }
 
 #about-img img {
-	width: 280px;
-	height: 300px;
+	width: 350px;
 	border-radius: 6px;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	transform: translate(-10px, -10px);
 }
 
@@ -136,19 +147,23 @@ h1 {
 	width: 50%;
 	margin: auto;
 	margin-top: 50px;
-	border: 2px solid rgb(110, 224, 154);
+	border: 2px solid var(--orange-color);
 	border-radius: 4px;
 	text-align: center;
 	padding: 10px;
 	font-size: 18px;
-	font-family: 'Roboto Mono', monospace;
 	cursor: pointer;
+	font-family: 'Chivo Mono', monospace;
 }
 
 .button-link:hover {
 	background-color: rgb(77, 82, 56);
 	font-weight: bold;
 	color: white;
+}
+
+.svg-image{
+	display: none;
 }
 
 /* About Me */
@@ -161,14 +176,15 @@ h1 {
 }
 .horizontal-rule {
 	width: 130px;
-	background-color: #8892b0;
+	background-color: var(--orange-color);
+	/* background-color: #8892b0; */
 	height: .1px;
 }
 #about-tools {
 	font-size: 16px;
-	font-family: 'Roboto Mono', monospace;
 	display: flex;
 	flex-wrap: wrap;
+	font-family: 'Chivo Mono', monospace;
 }
 #about-tools li {
 	color: #8892b0;
@@ -191,7 +207,7 @@ h1 {
 }
 
 #about-text > p:nth-of-type(3) a {
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 }
 
 #about-text > p:nth-of-type(3) a:hover {
@@ -201,10 +217,10 @@ h1 {
 #about-img {
 	margin-top: 50px;
 	position: static;
-	border: 2px solid rgb(110, 224, 154);
+	border: 2px solid var(--pale-green);
 	border-radius: 6px;
-	width: 280px;
-	height: 300px;
+	width: 350px;
+	height: 370px;
 }
 
 #about-img img:hover {
@@ -223,13 +239,13 @@ h1 {
 }
 #company {
 	border-left: 2.5px solid rgba(64, 224, 208, 0.171);
+	font-family: 'Chivo Mono', monospace;
 }
 
 #company li {
 	list-style: none;
 	line-height: 40px;
 	font-size: 16px;
-	font-family: 'Roboto Mono', monospace;
 	color: #8892b0;
 	width: 150px;
 	padding-left: 20px;
@@ -237,7 +253,7 @@ h1 {
 
 #company > li:hover {
 	background-color: rgba(64, 224, 208, 0.171);
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -259,10 +275,9 @@ h1 {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 #company-link {
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 }
 #timeline {
-	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
 }
 
@@ -280,8 +295,7 @@ h1 {
 	position: relative;
 }
 .blog-details > p:nth-of-type(1) {
-	font-family: 'Roboto Mono', monospace;
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 	font-size: 16px;
 }
 .blog-details h3 {
@@ -291,8 +305,8 @@ h1 {
 .blog-details > div:nth-of-type(1) {
 	z-index: 2;
 	position: relative;
-	background-color: rgb(110, 224, 154);
-	border-top: 1px solid rgb(110, 224, 154);
+	background-color: var(--pale-green);
+	border-top: 1px solid var(--pale-green);
 }
 .hanging-text {
 	transform: translate(-40px, 0px);
@@ -359,7 +373,6 @@ h1 {
 .pro-icons {
 	padding-bottom: 30px;
 	font-size: 30px;
-	font-family: 'Roboto Mono', monospace;
 }
 .pro-head {
 	color: #ccd6f6;
@@ -367,11 +380,11 @@ h1 {
 	padding-bottom: 20px;
 }
 .pro-stack {
-	font-family: 'Roboto Mono', monospace;
-	padding-top: 20px;
+	padding-top: 30px;
+	font-family: 'Chivo Mono', monospace;
 }
 .icon-color {
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 }
 
 /* Contact section */
@@ -383,7 +396,7 @@ h1 {
 	text-align: center;
 }
 #contact-section > h2:nth-of-type(1) {
-	color: rgb(110, 224, 154);
+	color: var(--pale-green);
 	font-family: 'Lato', sans-serif;
 }
 #contact-section > h2:nth-of-type(2) {
@@ -567,5 +580,14 @@ h1 {
 	/* Contact Section */
 	#contact-section {
 		width: 50%;
+	}
+
+	.svg-image{
+		display: block;
+		position: absolute;
+		width:30%;
+		background: none;
+		top:10rem;
+		right: 10rem;
 	}
 }
