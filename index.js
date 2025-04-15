@@ -5,9 +5,10 @@ const experiences = [
 			'@ Kanzu-Code',
 			'October 2022 - Present',
 			[ 
-				"...." 
+				"Manage and lead implementation of tech bootcamps aimed to develop tech talent for employability",
+				"Work closely with the board of directors to implement vision of having 1 million skilled African youth deployed into the tech ecosystem by 2030."
 			],
-			'https://outbox.co.ug/'
+			'https://kanzucodefoundation.org/'
 		]
 	},
 	{
