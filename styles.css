@@ -303,7 +303,7 @@ h1 {
 }
 .blog-details h3 {
 	font-family: 'Noto Sans JP', sans-serif;
-	padding: 5px 0px 20px 0px;
+	padding: 5px 20px 20px 0px;
 }
 .blog-details > div:nth-of-type(1) {
 	z-index: 2;
@@ -317,6 +317,10 @@ h1 {
 	box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
+}
+.hanging-text a{
+	color: var(--pale-green);
+	text-decoration: underline;
 }
 .blog-section {
 	width: 100%;
